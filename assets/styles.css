@@ -1,0 +1,122 @@
+body{
+	margin: 0;
+}
+.hero{
+	height: 90vh;
+	margin: 0;
+	position: relative;
+	background: url('http://www.metalteamuk.net/wp-content/uploads/2015/02/Photography-13.jpg') no-repeat center center/cover;
+}
+#navbar{
+	background-color: rgba(128,128,128,0.4);
+	text-align: right;
+  	text-transform:uppercase;
+  	font-family:'Arvo', sans-serif;
+	position: absolute;
+	z-index: 5;
+	height: 10vH;
+	width: 100%;
+}
+#navbar li{
+	display: inline-block;
+	padding: 8px 28px 8px 8px;
+	cursor: pointer;
+}
+a:hover{
+	color: #fff;
+	text-shadow: 0 0 3px #FF0000;
+}
+#navbar img{
+	height: 45px;
+	width: 80px;
+	display: inline-block;
+	float : left;
+	padding: 8px 8px;
+}
+a.active{
+	color: red;
+}
+a{
+	text-decoration: none;
+	color: rgb(58, 43, 24);
+	/*color: transparent;*/
+}
+.box1{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	color: rgb(58, 43, 24);
+	background-color: #FEB002;
+	margin-top: 10vh;
+}
+.innerBox{
+	height: auto;
+	width: 30%;
+	min-width: 300px;
+	overflow: hidden;
+	text-align: justify;
+	max-height: 500px;
+  	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#imgBox1{
+	margin-left: -1.5%;
+}
+.innerBox h3{
+	text-align: center;
+}
+#imgBox1 img{
+	width: 100%;
+	height: 500px;
+}
+#imgBox3 img{
+	width: 100%;
+	height: 500px;
+}
+#imgBox2 {
+	padding: 1em;
+	font-family: 'Comfortaa', cursive;
+	letter-spacing: 0.2em;
+	line-height: 1.4em;
+	color: #fff;
+}
+#imgBox2 h3{
+	margin-top: 40%;
+}
+.box2{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color:  rgb(58, 43, 24);
+	  transition: 0.3s;
+}
+
+.box2 #hafImg{
+	width: 100%;
+	height: auto;
+
+}
+#hafImg img{
+	width: 50%;
+	display: inline;
+  transition: 0.4s;
+  z-index: 2;
+}
+#qoute{
+	position: absolute;
+	color: #fff;
+	display: none;
+	transition: 3.5s ease-in;
+	font-family: 'Lacquer', sans-serif;
+	font-size: 2em;
+	margin-top: 10%;
+	margin-left: -10%;
+	width: 25%;
+}
+@media screen and (max-width: 700px){
+	#qoute{
+	font-size: 1em;	
+	margin-top: 10%;	
+	}
+}
