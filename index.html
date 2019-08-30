@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>photography</title>
+	<link rel="stylesheet" type="text/css" href="assets/styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+        $(window).scroll(function() {
+        if($(window).width()<500){
+        	// alert("hello");
+        }
+        if ($(window).scrollTop() >= 560) {
+        	$('#navbar').css('position' , 'fixed');
+        	$('#navbar').css('top' , '0');
+        }else{
+        	$('#navbar').css('position' , 'absolute');
+        	$('#navbar').css('top' , '90vH');
+
+        }
+});
+   
+$(document).ready(function(){
+  $(".box21").hover(function(){
+    $('#hafImg1').css("transform", "translate(0)");
+    $('#hafImg2').css("transform", "translate(0)");
+    $('#qoute').css("display", "inline");
+    });
+$(".box21").mouseout(function(){
+    $('#hafImg1').css("transform", "translate(50%)");
+    $('#hafImg2').css("transform", "translate(-50%)");
+    $('#qoute').css("display", "none");
+});
+});
+</script>
+
+</head>
+<body>
+<div class="hero">
+</div>
+<nav id="navbar">
+	<img src="https://dlior9lx1k7r2.cloudfront.net/companylogo/11c2cd24-2cc2-48af-91f8-735fcba21f28.png">
+	<ul>
+		<li><a href=""><strong>Home</strong></a></li></li>
+		<li><a href="#box1"><strong>About</strong></a></li>
+		<li><a href="#box2"><strong>Quote</strong></a></li>
+	</ul>
+</nav>
+<div class="box1" id="box1">
+
+<div class="innerBox" id="imgBox1" >
+	<!-- <img src="http://themocracy.com/wp-content/uploads/2017/12/CorpPhotography.jpg"> -->
+	<img style="margin-left: 0%;" src="assets/img/1.png">
+</div>	
+<div class="innerBox" id="imgBox2" >
+	<h3>Art of Photography</h3>
+	Photography is the art, application and practice of creating durable images by recording light or other electromagnetic radiation, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.
+</div>	
+<div class="innerBox" id="imgBox3" >
+	<img src="assets/img/4.png">
+</div>	
+</div>
+<div class="box2 box21" id="box2">
+
+<div class="innerBox box21" id="hafImg" >
+	<span style=""><img class=" box21" id="hafImg1" style="float: left; transform: translate(50%);" src="assets/img/haf1.png"></span>
+	<span id="qoute" class=" box21">“Photography takes an instant out of time, altering life by holding it still.”</span>
+	<span style=""><img class=" box21" id="hafImg2" style="float: right; transform: translate(-50%);" src="assets/img/haf2.png"></span>
+</div>	
+</div>
+</body>
+</html>
